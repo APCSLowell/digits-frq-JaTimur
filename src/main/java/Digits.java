@@ -10,7 +10,7 @@ public class Digits
 		digitList=new ArrayList<Integer>();
 		String str=""+num;
 		for(int n=0;n<str.length();n++){
-			digitList.add(str.substring(n,n+1));
+			digitList.add(str.charAt(n));
 		}
 	}
 
