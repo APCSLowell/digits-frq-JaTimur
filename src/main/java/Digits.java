@@ -7,8 +7,8 @@ public class Digits
 
 	public Digits(int num)
 	{ 
-		for(int n=0;n<num.toString().length();n++){
-			digitList.set(n,num.toString().substring(n,n+1));
+		for(int n=0;n<num.length();n++){
+			digitList.set(n,num.substring(n,n+1));
 		}
 	}
 
