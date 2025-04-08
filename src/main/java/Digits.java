@@ -6,14 +6,18 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num)
-	{ /* to be implemented in part (a) */ 
-	    
+	{ 
+		for(int n=0;n<num.toString().length();n++){
+			digitList.set(n,num.toString().substring(n,n+1));
+		}
 	}
 
 	public boolean isStrictlyIncreasing()
-	{ /* to be implemented in part (b) */
-		
-
+	{ 
+		for(int n=0;n<digitList.size();n++){
+			if(digitList.get(n)<=digitList.get(n-1)) return false;
+		}
+		return true;
 	}
 	
 	public String toString()
