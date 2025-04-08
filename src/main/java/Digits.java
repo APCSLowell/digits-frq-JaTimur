@@ -16,8 +16,8 @@ public class Digits
 
 	public boolean isStrictlyIncreasing()
 	{ 
-		for(int n=0;n<digitList.size();n++){
-			if(digitList.get(n)<=digitList.get(n-1)) return false;
+		for(int n=0;n<digitList.size()-1;n++){
+			if(digitList.get(n)>=digitList.get(n+1)) return false;
 		}
 		return true;
 	}
